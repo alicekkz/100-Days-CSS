@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #421a9c;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 5%;
+}
+
+.center {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 90px;
+    left: 90px;
+}
+
+.circle-1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #000093;
+    top: 80px;
+    left: 80px;
+    border-radius: 50%;
+    z-index: 3;
+    animation: pulo-1 2s infinite alternate;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.21, .98, .6, .99);
+}
+
+.circle-2 { 
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #0808cc;
+    top: 65px;
+    left: 65px;
+    border-radius: 50%;
+    z-index: 2;
+    animation: pulo-2 2s infinite alternate;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.21, .98, .6, .99);
+}
+
+.circle-3 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #9da7df;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    z-index: 1; animation: pulo-3 2s infinite alternate;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.21, .98, .6, .99);
+}
+
+@keyframes pulo-1 {
+    0%,70%{
+        box-shadow: 2px 2px 3px 2px rgb(0, 0, 0, 0.2);
+        transform: scale(0);
+    }
+    100%{
+        box-shadow: 4px 4px 6px 4px rgb(0, 0, 0, 0.2);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulo-2 {
+    0%, 40%{
+        box-shadow: 2px 2px 3px 2px rgb(0, 0, 0, 0.2);
+        transform: scale(0);
+    }
+    100% {
+        box-shadow: 4px 4px 6px 4px rgb(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes pulo-3 {
+    0%, 10% {
+        box-shadow: 2px 2px 3px 2px rgb(0, 0, 0, 0.2);
+        transform: scale(0);
+    }
+
+    100% {
+        box-shadow: 4px 4px 6px 4px rgb(0, 0, 0, 0.2);
+        transform: scale(1);
+    }
+}
