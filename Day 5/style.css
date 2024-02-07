@@ -1,0 +1,133 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #42A7A1;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    height: 30%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #F1BA64;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    justify-content: end;
+}
+
+.big {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.small {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+    height: 70%;
+}
+
+.lineinfo {
+    margin-inline: 15px;
+    display: flex;
+    height: 25%;
+    justify-content: end;
+    align-items: center;
+    color: rgb(128, 128, 128);
+    border-bottom: 2px solid rgba(211, 211, 211, 0.6);
+}
+
+.view {
+    display: flex;
+    justify-content: end;
+    color: rgb(128, 128, 128, 0.8);
+}
+
+.line {
+    margin-right: 10px;
+    margin-left: 30px;
+    display: block;
+    content: '';
+    width: 11px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.separator {
+    margin-inline: 15px;
+    height: 25%;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.6);
+}
+
+svg {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+}
+
+polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.redpoints .point {
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background-color: #FA7373;
+    border-radius: 50%;
+}
+
+.bluepoints .point {
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background: #7BA2FF;
+    border-radius: 50%;
+}
+
+.month {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    color: rgba(128, 128, 128, 0.8);
+    font-size: 10px;
+}
