@@ -1,0 +1,158 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: linear-gradient(45deg, #ffc776 20%, #e56515 100%);
+    border-radius: 8px;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frame-2 {
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,0.8);
+    background-color: white;
+    width: 320px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-section {
+    width: 120px;
+}
+
+.left-section {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section .profile-image img {
+    width: 80px;
+    object-fit: cover;
+    height: 80px;
+}
+
+.left-section .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.left-section .profile-desc {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #786450
+}
+
+.left-section .profile-desc .name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.left-section .btn {
+    border: 1px solid #786450;
+    color: #786450;
+    padding: 6px 34px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: context-menu;
+    margin: 10px 0;
+    transition: all 0.2 ease-in;
+}
+
+.left-section .btn:hover {
+    background-color: #786450;
+    color: white;
+}
+
+.right-section .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5E8DF;
+    height: 98.7px;
+    color: #786450;
+    cursor: pointer;
+    transition: background-color 0.3 ease-in;
+}
+
+.right-section .section:hover {
+    background-color: #E1CFC2;
+}
+
+.right-section .section .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.right-section .section .desc {
+    font-size: 12px;
+    line-height: 8px;
+    font-weight: 300;
+}
+
+.like-section {
+    margin: 2px 0;
+}
+
+.left-section .profile {
+    cursor: pointer;
+}
+
+.border1 {
+    position: absolute;
+    top: 29px;
+    left: 57.5px;
+    width: 83px;
+    height: 83px;
+    border-radius: 100%;
+    border: 1px solid;
+    border-color: #786450 #786450 #786450 transparent;
+    transition: transform 1s cubic-bezier(.19,.07,.84,.64);
+}
+
+.left-section .profile:hover .border1 {
+    transform: rotate(360deg);
+}
+
+.border2 {
+    position: absolute;
+    top: 26px;
+    left: 54.5px;
+    width: 89px;
+    height: 89px;
+    border-radius: 100%;
+    border: 1px solid;
+    border-color: #786450 transparent #786450 #786450;
+    transition: transform 1s cubic-bezier(.19,.07,.84,.64);
+}
+
+.left-section .profile:hover .border2 {
+    transform: rotate(-360deg);
+}
