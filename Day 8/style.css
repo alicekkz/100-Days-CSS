@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Poppins:wght@200;300;400&display=swap');
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 6px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #000;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    filter: contrast(20);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(6px);
+}
+
+.ball {
+    background-color:#ffcbff;
+    border-radius: 50%;
+    border: none;
+}
+
+.ball-lg {
+    background-color:#ffcbff;
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+.ball-md {
+    background-color:#ffcbff;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 10px;
+}
+
+.ball-sm {
+    background-color:#ffcbff;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    left: 20px;
+}
+
+.balll-2 {
+    background-color:#ffcbff;
+    transform-origin: 25% 25%;
+    animation: rotate 4s ease infinite;
+    width: 60px;
+    height: 60px;
+}
+
+.ball-3 {
+    background-color:#ffcbff;
+    transform-origin: -75% 175%;
+    animation: rotate 3s ease infinite;
+}
+
+.ball-4 {
+    background-color:#ffcbff;
+    transform-origin: -95% -195%;
+    animation: rotate 5s ease infinite;
+}
+
+.ball-5 {
+    background-color:#ffcbff;
+    transform-origin: 275% 145%;
+    animation: rotate 7s ease infinite;
+}
+
+.ball-6 {
+    background-color:#ffcbff;
+    transform-origin: 370% 370%;
+    animation: rotate 5.2s ease infinite;
+}
+
+.ball-7 {
+    background-color:#ffcbff;
+    transform-origin: -205% 275%;
+    animation: rotate 4s ease infinite;
+}
+
+.ball-8 {
+    background-color:#ffcbff;
+    transform-origin: 275% -215%;
+    animation: rotate 8s ease infinite;
+}
+
+.ball-9 {
+    background-color:#ffcbff;
+    transform-origin: -285% 75%;
+    animation: rotate 3.7s ease infinite;
+}
+
+.ball-10 {
+    background-color:#ffcbff;
+    transform-origin: -185% -45%;
+    animation: rotate 5.1s ease infinite;
+}
+
+.ball-11 {
+    background-color:#ffcbff;
+    transform-origin: 305% 325%;
+    animation: rotate 3.8s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(360deg) translate3d(0, 0, 0);
+    }
+}
