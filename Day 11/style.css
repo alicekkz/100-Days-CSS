@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #6d3b8b;
+    color: #333;
+    font-size: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black {
+    position: fixed;
+    background-color: rgb(54, 49, 55);
+    height: 200px;
+    width: 400px;
+    margin: 30px -200px;
+}
+
+.shoe1 {
+    position: absolute;
+    width: 151px;
+    height: 128px;
+    margin: -121px -10px;
+    transform: rotate(-40deg);
+    z-index: 0;
+    animation: shoe1 1.8s linear infinite;
+    background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+}
+
+.shoe2 {
+    position: absolute;
+    width: 151px;
+    height: 128px;
+    z-index: 1;
+    animation: shoe2 1.8s linear infinite;
+    background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+}
+
+@keyframes shoe1 {
+    0%{margin: -121px -130px;
+        transform: rotate(50deg);}
+      25%{margin: -121px -80px;
+        transform: rotate(0deg);}
+       50%{margin: -121px -0px;
+        transform: rotate(-40deg);} 
+        75%{margin: -111px -70px;
+          transform: rotate(30deg);
+          transition: 1s;
+        }
+        100%{margin: -121px -130px;
+          transform: rotate(50deg);transition: 1s;}
+}
+
+@keyframes shoe2 {
+    0%{margin: -121px -0px;
+    transform: rotate(-40deg);}
+    25%{margin: -111px -70px;
+    transform: rotate(30deg);
+    transition: 1s;}
+    50%{margin: -121px -130px;
+    transform: rotate(50deg);
+    transition: 1s;}
+    100%{margin: -121px -0px;
+    transform: rotate(-40deg);}
+}
