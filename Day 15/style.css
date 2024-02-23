@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(59deg, rgba(190, 176, 163, 0.904), rgb(155, 129, 160) ) ; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 10px rgb(140, 125, 143);
+}
+h3{
+    margin-top: 30px;
+    position: relative;
+}
+h3::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    left: 0;
+    bottom: -15px;
+}
+.upload{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.upload button{
+    width: fit-content;
+    padding: 15px 25px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(155, 109, 147, 0.765);
+    border-radius: 5px;
+    font-size: 17px;
+}
+.upload button:hover{
+    background-color: rgba(145, 94, 136, 0.765);
+    box-shadow:  0px 0px 10px 4px rgba(145, 94, 136, 0.765);
+}
+.upload .bx{
+    padding: 10px 15px;
+    font-size: 45px;
+    border: 2px dashed #ddd;
+    color: #bdb9b9;
+    cursor: pointer;
+}
+input{
+    display: none;
+}
