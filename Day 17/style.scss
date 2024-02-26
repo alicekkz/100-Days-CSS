@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.traits {
+    position: relative;
+    top:-68px;
+    left: -100px;
+    transform: rotate(45deg);
+    width: 600px;
+    @for $i from 1 through 29 {
+        .trait-#{$i} {
+            background: #353535;
+            width: 600px;
+            height: 3px;
+            margin: 16px;
+        }
+    }
+}
+
+.center {
+    position: absolute;
+    top:70px;
+    left: 70px;
+    background: #353535;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.4);
+    width: 260px;
+    height: 260px;
+}
+
+.triangle {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 160px;
+    height: 140px;
+    .third {
+        fill: #EEEEEE;
+        transition: all .5s ease-in-out;
+    }
+    .first {
+        fill: #CCCCCC;
+        transition: all .5s ease-in-out;
+    }
+    .second {
+        fill: #AAAAAA;
+        transition: all .5s ease-in-out;
+    }
+
+    &:hover {
+        .third {
+            fill: #AAAAAA;
+        }
+        .first {
+            fill:#EEEEEE;
+        }
+        .second {
+            fill: #CCCCCC
+        }
+    }
+}

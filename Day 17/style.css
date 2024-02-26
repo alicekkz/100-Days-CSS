@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.traits {
+  position: relative;
+  top: -68px;
+  left: -100px;
+  transform: rotate(45deg);
+  width: 600px;
+}
+.traits .trait-1 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-2 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-3 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-4 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-5 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-6 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-7 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-8 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-9 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-10 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-11 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-12 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-13 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-14 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-15 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-16 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-17 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-18 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-19 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-20 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-21 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-22 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-23 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-24 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-25 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-26 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-27 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-28 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+.traits .trait-29 {
+  background: #353535;
+  width: 600px;
+  height: 3px;
+  margin: 16px;
+}
+
+.center {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  background: #353535;
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+  width: 260px;
+  height: 260px;
+}
+
+.triangle {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 160px;
+  height: 140px;
+}
+.triangle .third {
+  fill: #EEEEEE;
+  transition: all 0.5s ease-in-out;
+}
+.triangle .first {
+  fill: #CCCCCC;
+  transition: all 0.5s ease-in-out;
+}
+.triangle .second {
+  fill: #AAAAAA;
+  transition: all 0.5s ease-in-out;
+}
+.triangle:hover .third {
+  fill: #AAAAAA;
+}
+.triangle:hover .first {
+  fill: #EEEEEE;
+}
+.triangle:hover .second {
+  fill: #CCCCCC;
+}/*# sourceMappingURL=style.css.map */
