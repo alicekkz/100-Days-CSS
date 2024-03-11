@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #497081;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    background-color: #4158d0;
+    background: #4e1e67;
+    border-radius: 3px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    height: 300px;
+    width: 250px;
+    border-radius: 3px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight: light;
+}
+
+.head {
+    border-bottom: 1px solid #d4dce0;
+    padding-bottom: 20px;
+    margin: 10px 30px;
+
+    .title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+ul {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-bottom: 16px;
+
+    li {
+        input[type="checkbox"] {
+            display: none;
+        }
+
+     svg {
+        z-index: 3;
+        position: absolute;
+        right: 17px;
+        stroke: transparent;
+        fill: transparent;
+        stroke-linecap: square;
+        stroke-dasharray: 20 20;
+        stroke-dashoffset: 20;
+        stroke-width: 2px;
+        transition: all 0.3s ease-in-out;
+     }
+
+     label {
+        cursor: pointer;
+
+        &.button {
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            border: 1px solid #497081;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.text {
+            color: #497081;
+            transition: all 0.4s ease-in-out;
+        }
+     }
+
+
+     padding: 0 20px;
+     font-size: 14px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+    }
+}
+
+input[type="checkbox"]:checked + label.text {
+    color: #ccd7dc;
+}
+
+input[type="checkbox"]:checked + label.button svg {
+    stroke: #ccd7dc;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.4s ease-in-out 0.2s;
+}
+
+input[type="checkbox"]:checked ~ label.button {
+    height: 18px;
+    width: 18px;
+    border-color: white;
+}
