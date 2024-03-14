@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+* {
+    box-sizing: border-box;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #af96e1;
+    color: #333;
+    line-height: 1.7;
+    font-size: 14px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0,.1);
+}
+
+.panel {
+    display: none;
+    width: 100%;
+    background: rgba(255, 255, 255,.8);
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    &.is_active {
+        display: none;
+        border-top: solid 1px #af96e1;
+    }
+
+    p {
+        cursor: pointer;
+        padding: 5px 10px;
+        &:hover {
+            background: #af96e1;
+        }
+    }
+}
+
+.field {
+    height: 40px;
+    width: 220px;
+    outline: none;
+    padding: 0 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+    color: #af96e1;
+    font-size: 18px;
+    background: #fff;
+    outline: none;
+    border: none;
+    border-left: solid 1px #af96e1;
+    cursor: pointer;
+    transition: all .3s;
+
+    &.hover{
+        color: #fff;
+        background: #af96e1;
+    }
+}
