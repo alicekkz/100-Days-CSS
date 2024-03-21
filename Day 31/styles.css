@@ -1,0 +1,115 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background: #4C4BA2;
+}
+
+.dots {
+  padding-top: 28px;
+  padding-left: 194px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 5px 0;
+}
+
+.dot-1 {
+  animation: dots 1.0169491525s ease-in-out infinite;
+}
+
+.dot-2 {
+  animation: dots 1.0344827586s ease-in-out infinite;
+}
+
+.dot-3 {
+  animation: dots 1.0526315789s ease-in-out infinite;
+}
+
+.dot-4 {
+  animation: dots 1.0714285714s ease-in-out infinite;
+}
+
+.dot-5 {
+  animation: dots 1.0909090909s ease-in-out infinite;
+}
+
+.dot-6 {
+  animation: dots 1.1111111111s ease-in-out infinite;
+}
+
+.dot-7 {
+  animation: dots 1.1320754717s ease-in-out infinite;
+}
+
+.dot-8 {
+  animation: dots 1.1538461538s ease-in-out infinite;
+}
+
+.dot-9 {
+  animation: dots 1.1764705882s ease-in-out infinite;
+}
+
+.dot-10 {
+  animation: dots 1.2s ease-in-out infinite;
+}
+
+.dot-11 {
+  animation: dots 1.2244897959s ease-in-out infinite;
+}
+
+.dot-12 {
+  animation: dots 1.25s ease-in-out infinite;
+}
+
+.dot-13 {
+  animation: dots 1.2765957447s ease-in-out infinite;
+}
+
+.dot-14 {
+  animation: dots 1.3043478261s ease-in-out infinite;
+}
+
+.dot-15 {
+  animation: dots 1.3333333333s ease-in-out infinite;
+}
+
+.dot-16 {
+  animation: dots 1.3636363636s ease-in-out infinite;
+}
+
+.dot-17 {
+  animation: dots 1.3953488372s ease-in-out infinite;
+}
+
+.dot-18 {
+  animation: dots 1.4285714286s ease-in-out infinite;
+}
+
+.dot-19 {
+  animation: dots 1.4634146341s ease-in-out infinite;
+}
+
+.dot-20 {
+  animation: dots 1.5s ease-in-out infinite;
+}
+
+@keyframes dots {
+  0%, 100% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+}/*# sourceMappingURL=styles.css.map */
