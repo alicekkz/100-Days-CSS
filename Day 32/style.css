@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:500);
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #9d75e9;
+    background: linear-gradient(to top right, #29046e, #9d75e9 100%);
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    background: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.box .minus {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.box .minus:before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    width: 18px;
+    height: 2px;
+    background: #594381;
+    transition: all 0.3s ease-in-out;
+}
+
+.box .minus:hover {
+    background: #594381;
+}
+.box .minus:hover:before {
+    background: #fff;
+}
+
+.box .plus {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.box .plus:before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    width: 18px;
+    height: 2px;
+    background: #8ED273;
+}
+
+.box .plus:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    width: 2px;
+    height: 18px;
+    background: #8ED273;
+    transition: all 0.3s ease-in-out;
+}
+
+.box .plus:hover {
+    background: #8ED273;
+}
+.box .plus:hover:before, .box .plus:hover:after {
+    background: #fff;
+}
+
+.box .number {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #6A85A0;
+}
